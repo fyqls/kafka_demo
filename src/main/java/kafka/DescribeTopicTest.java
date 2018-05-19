@@ -30,5 +30,7 @@ public class DescribeTopicTest {
             System.out.println(partitionMetadata.toString());
         }
 
+        zkUtils.close();
+
     }
 }
