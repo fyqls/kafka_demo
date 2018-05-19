@@ -1,0 +1,5 @@
+https://blog.csdn.net/fang_sh_lianjia/article/details/52210826?locationNum=6#32-生产者producer配置
+
+
+https://www.cnblogs.com/zzt-lovelinlin/p/6228773.html
+./kafka-console-consumer.sh -zookeeper zookeeper:2181 --from-beginning --topic t1
