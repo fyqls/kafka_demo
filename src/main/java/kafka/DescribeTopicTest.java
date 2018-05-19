@@ -20,7 +20,6 @@ public class DescribeTopicTest {
     public static void main(String[] args) {
 
         ZkUtils zkUtils = ZkUtils.apply(ZK_ADDR, 3000, 3000, false);
-        Properties props = AdminUtils.fetchEntityConfig(zkUtils, ConfigType.Topic(), TOPIC);
         TopicMetadata topicMetadata= AdminUtils.fetchTopicMetadataFromZk(TOPIC, zkUtils);
 
         Seq<PartitionMetadata> partitionMetadataSeq = topicMetadata.partitionsMetadata();
